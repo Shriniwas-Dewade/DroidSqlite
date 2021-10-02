@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="horizontal"
+    android:gravity="center">
+
+    <LinearLayout
+		android:orientation="vertical"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent" >
+		
+		<EditText
+			android:id="@+id/Eid"
+			android:inputType="number"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:layout_margin="10dp"
+			android:hint="ID"
+			android:maxLines="1" />
+		
+		<EditText
+			android:id="@+id/Ename"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:layout_margin="10dp"
+			android:hint="Name"
+			android:maxLines="1" />
+		
+		<EditText
+			android:id="@+id/Eage"
+			android:inputType="number"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:layout_margin="10dp"
+			android:hint="Age"
+			android:maxLines="1" />
+		
+		<EditText
+			android:id="@+id/Ecity"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:layout_margin="10dp"
+			android:hint="City"
+			android:maxLines="1" />
+		<LinearLayout
+			android:layout_margin="20dp"
+			android:gravity="center_horizontal"
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" >
+			
+			<Button
+				android:id="@+id/Bsave"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="Save"
+				android:textColor="#3463ff"
+				android:background="#3ff824"
+				android:layout_margin="10dp"
+				android:onClick="SaveState"
+				android:layout_weight="1" />
+			
+			<Button
+				android:id="@+id/Bdelete"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="Delete"
+				android:textColor="#3463ff"
+				android:background="#35ff24"
+				android:layout_margin="10dp"
+				android:onClick="DeleteState"
+				android:layout_weight="1" />
+			
+		</LinearLayout>
+		
+		<LinearLayout
+			android:gravity="center_horizontal"
+			android:layout_margin="5dp"
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" >
+
+			<Button
+				android:id="@+id/Bview"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="View"
+				android:textColor="#3463ff"
+				android:background="#35ff24"
+				android:onClick="ViewState"
+				android:layout_weight="1" />
+			
+		</LinearLayout>
+		
+	</LinearLayout>
+	
+</LinearLayout>
